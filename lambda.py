@@ -36,13 +36,36 @@
 # print(n.marks)
 #print(n)
 
-class Employ:
-    def __init__(self,name,designation):
-        self.name = name 
-        self.designation = designation
+# class Employ:
+#     def __init__(self,name,designation):
+#         self.name = name 
+#         self.designation = designation
     
-    def identity(self):
-        print("Hello, my name is " + self.name)
+#     def identity(self):
+#         print("Hello, my name is " + self.name)
 
-e1 = Employ("Joshua", 73)
-e1.identity()
+# e1 = Employ("Joshua", 73)ww
+# e1.identity()
+
+class Book:
+    def __init__(self,title,genre,price):
+        self.title=title
+        self.genre=genre
+        self.price=price
+    # def __str__(self):
+    #     return f"Title:{self.title},Genre:{self.genre},Price:{self.price}"
+    def sample(self):
+        print("The name of the book is " + self.title)
+
+book1 = Book("Randonm sock","Horror",21)
+book1.price=30
+book1.title = "Random soccer ball"
+print(book1.title)
+print(book1.price)
+del book1.genre
+# print(book1.genre)
+
+del book1
+print(book1)
+# print(book1)
+book1.sample()
